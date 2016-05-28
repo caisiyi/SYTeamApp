@@ -15,7 +15,7 @@ class RegisterMoreViewController: UIViewController,UIImagePickerControllerDelega
     
     lazy var nameLB:ZJLabel={
         let a=ZJLabel()
-        a.text="昵称:"
+        a.text="姓名:"
         return a
         
         }()
@@ -424,7 +424,7 @@ class RegisterMoreViewController: UIViewController,UIImagePickerControllerDelega
     
     func finish(){
         if(nameTF.text == nil || nameTF.text == ""){
-            SYProgressHUD.ShowFailed("昵称不能为空")
+            SYProgressHUD.ShowFailed("姓名不能为空")
         }
         else{
             SYProgressHUD.ShowSuccess("正在跳转")

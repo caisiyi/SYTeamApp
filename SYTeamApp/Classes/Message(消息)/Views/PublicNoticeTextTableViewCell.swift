@@ -16,7 +16,11 @@ class PublicNoticeTextTableViewCell: UITableViewCell {
             let message = model!.body as! EMTextMessageBody
  //           DateLabel.text = "\(model!.timestamp)"
             MessageTitle.text = " 公告 "
-            MessageDate.text = "\(model!.timestamp)"
+            var timestamp = model!.timestamp
+            if timestamp > 140000000000 {
+                timestamp = timestamp / 1000
+            }
+            MessageDate.text = NSDate(timeIntervalSince1970: Double(timestamp)).toString()
             MessageImage.image = UIImage(named: "返回")
             MessageLabel.text = message.text
             DetailImage.image = UIImage(named: "返回")

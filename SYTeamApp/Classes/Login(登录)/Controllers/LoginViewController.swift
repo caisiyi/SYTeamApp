@@ -15,9 +15,9 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         let zhTF=HoshiTextField()
         zhTF.placeholder="请输入账号"
         zhTF.borderActiveColor = UIColor.whiteColor()
-        zhTF.borderInactiveColor = UIColor(red: 103/255, green: 191/255, blue: 237/255, alpha: 1)
+        zhTF.borderInactiveColor = UIColor.whiteColor()
         zhTF.clearButtonMode=UITextFieldViewMode.WhileEditing
-        zhTF.keyboardType = UIKeyboardType.NamePhonePad
+        //zhTF.keyboardType = UIKeyboardType.NamePhonePad
                        return zhTF
         }()
     lazy var logo:UILabel = {
@@ -32,9 +32,9 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         pwTF.placeholder="请输入密码"
         pwTF.secureTextEntry=true
         pwTF.borderActiveColor = UIColor.whiteColor()
-        pwTF.borderInactiveColor = UIColor(red: 103/255, green: 191/255, blue: 237/255, alpha: 1)
+        pwTF.borderInactiveColor = UIColor.whiteColor()
         pwTF.clearButtonMode=UITextFieldViewMode.WhileEditing
-        pwTF.keyboardType = UIKeyboardType.Default
+        //pwTF.keyboardType = UIKeyboardType.Default
         
         return pwTF
         }()
@@ -87,7 +87,7 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        view.backgroundColor=UIColor(red: 18/255, green: 171/255, blue: 233/255, alpha: 1)
+        view.backgroundColor = AppColor
         view.addSubview(centerView)
   
         phoneTF.delegate = self
@@ -257,8 +257,12 @@ class LoginViewController: UIViewController ,UITextFieldDelegate{
             
             MainManager.instance.Login(str!, password: password!) { (successed) -> () in
                 if successed {
+                    
                     SYProgressHUD.ShowSuccess("登录成功")
-                    UIApplication.sharedApplication().keyWindow!.rootViewController = SYTabBarViewController()
+                    self.Delay(1.0, block: { 
+                        
+                        UIApplication.sharedApplication().keyWindow!.rootViewController = SYTabBarViewController()
+                    })
                 }else{
                     SYProgressHUD.ShowFailed("登录失败")
                 }

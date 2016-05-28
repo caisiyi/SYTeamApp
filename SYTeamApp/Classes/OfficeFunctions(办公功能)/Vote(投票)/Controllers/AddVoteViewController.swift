@@ -36,7 +36,7 @@ class AddVoteViewController: NormalNavViewController,SYAlertViewDelegate,UINavig
         items.rowHeight = 300
         items.separatorStyle =  UITableViewCellSeparatorStyle.None
         navigationItem.title = "新的投票"
-            let done = UIBarButtonItem.init(title: "发布", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(AddVoteViewController.done))
+            let done = UIBarButtonItem.init(title: "发起", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(AddVoteViewController.done))
             
         navigationItem.rightBarButtonItem = done
            }

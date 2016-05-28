@@ -55,7 +55,7 @@ class RegisterViewController: UIViewController ,UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        view.backgroundColor=UIColor(red: 18/255, green: 171/255, blue: 233/255, alpha: 1)
+        view.backgroundColor=AppColor
         phoneTF.delegate = self
         view.addSubview(phoneTF)
         phoneTF.snp_makeConstraints { (make) -> Void in

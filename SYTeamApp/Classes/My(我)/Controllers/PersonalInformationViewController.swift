@@ -52,6 +52,7 @@ class PersonalInformationViewController: UIViewController,AlterNameViewControlle
         MainTableView.delegate = self
         MainTableView.dataSource = self
         MainTableView.scrollEnabled = false
+        MainTableView.tableFooterView = UIView()
         MainTableView.snp_makeConstraints { (make) -> Void in
             make.top.equalTo(0)
             make.left.right.equalTo(0)
@@ -128,7 +129,7 @@ extension PersonalInformationViewController:UITableViewDataSource,UITableViewDel
             switch indexPath.section{
             case 0:return 15
             case 1:return 30
-            default:return 80
+            default:return UIScreen.mainScreen().bounds.height - 6 * 50 - 80 - 15 - 30
             }
         }
         else if indexPath.row == 1{
@@ -181,7 +182,7 @@ extension PersonalInformationViewController:UITableViewDataSource,UITableViewDel
             if(indexPath.section == 0){
             switch indexPath.row{
             case 2:
-                cell.LeftLabel.text = "昵称"
+                cell.LeftLabel.text = "姓名"
                 cell.RightLabel.text = UserAccount.shareUser.nickname
                 
                 

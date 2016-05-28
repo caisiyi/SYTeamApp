@@ -22,7 +22,7 @@ class ConductVoteViewController: UIViewController{
         super.viewDidLoad()
         view.addSubview(InfoTableView)
         view.backgroundColor = UIColor.whiteColor()
-        navigationItem.title = "发布"
+        navigationItem.title = "投票"
         InfoTableView.delegate = self
         InfoTableView.dataSource = self
         InfoTableView.separatorStyle =  UITableViewCellSeparatorStyle.None

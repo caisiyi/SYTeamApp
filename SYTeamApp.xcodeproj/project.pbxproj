@@ -273,6 +273,7 @@
 		99D1F5DF1CA8BC0100FE862D /* CRMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1F5DE1CA8BC0100FE862D /* CRMViewController.swift */; };
 		99D1F5E41CA8C59000FE862D /* AnimatedSegmentSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1F5E31CA8C59000FE862D /* AnimatedSegmentSwitch.swift */; };
 		99D1F5E71CA8CAD400FE862D /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D1F5E61CA8CAD400FE862D /* CAPSPageMenu.swift */; };
+		99DE01D11CE6597400C97282 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE01D01CE6597400C97282 /* UIViewController+Extension.swift */; };
 		99E572B71CA957D800CF0F54 /* libHyphenateSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E572B51CA957D800CF0F54 /* libHyphenateSDK.a */; };
 		99E572B91CA957E900CF0F54 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E572B81CA957E900CF0F54 /* CoreMedia.framework */; };
 		99E572BB1CA957F400CF0F54 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E572BA1CA957F400CF0F54 /* AudioToolbox.framework */; };
@@ -751,6 +752,7 @@
 		99D1F5DE1CA8BC0100FE862D /* CRMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRMViewController.swift; sourceTree = "<group>"; };
 		99D1F5E31CA8C59000FE862D /* AnimatedSegmentSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSegmentSwitch.swift; sourceTree = "<group>"; };
 		99D1F5E61CA8CAD400FE862D /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		99DE01D01CE6597400C97282 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		99E5728D1CA957D800CF0F54 /* EMCallLocalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallLocalView.h; sourceTree = "<group>"; };
 		99E5728E1CA957D800CF0F54 /* EMCallManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallManagerDelegate.h; sourceTree = "<group>"; };
 		99E5728F1CA957D800CF0F54 /* EMCallRemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCallRemoteView.h; sourceTree = "<group>"; };
@@ -1809,6 +1811,7 @@
 			isa = PBXGroup;
 			children = (
 				99D1F5D01CA8BB8100FE862D /* Common-Color.swift */,
+				99DE01D01CE6597400C97282 /* UIViewController+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2324,6 +2327,7 @@
 				99BD01C81CA396C200CE0559 /* Constraint.swift in Sources */,
 				99A0A9591CA81B7900B2B552 /* RACSignal.m in Sources */,
 				99BD02411CA3998A00CE0559 /* extensionButton.swift in Sources */,
+				99DE01D11CE6597400C97282 /* UIViewController+Extension.swift in Sources */,
 				99A0A92E1CA81B7900B2B552 /* NSObject+RACPropertySubscribing.m in Sources */,
 				99E7FEA31CBE44C600A8885B /* ItemsTableViewCell.swift in Sources */,
 				99EF49A21CC3CE9400341413 /* UserTableChildViewCell.swift in Sources */,

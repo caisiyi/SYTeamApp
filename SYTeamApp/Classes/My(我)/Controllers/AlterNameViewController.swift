@@ -21,7 +21,7 @@ class AlterNameViewController: UIViewController ,UITextFieldDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "昵称"
+        self.title = "姓名"
         let leftItem = UIBarButtonItem(title: "取消", style: .Plain, target: self, action: "cancel")
         self.navigationItem.leftBarButtonItem = leftItem
         let rightItem = UIBarButtonItem(title: "完成", style: .Plain, target: self, action: "sure")
